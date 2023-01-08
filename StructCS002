@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+
+struct data_barang
+{
+char nama[20];
+int jumlah;
+float harga;
+}brg; //deklarasi sekaligus definisi var struktur
+
+main()
+{
+clrscr();
+
+printf("Nama Barang = "); gets(brg.nama);
+printf("Harga Satuan = "); scanf("%f",&brg.harga);
+printf("Jumlah = "); scanf("%d",&brg.jumlah);
+printf("Nama barang tersebut adalah %s\n",brg.nama);
+printf("Harga satuannya Rp. %.2f dengan jumlah %d buah",brg.harga, brg.jumlah);
+
+getch();
+return 0;
+}
